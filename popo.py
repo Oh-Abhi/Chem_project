@@ -1033,54 +1033,54 @@ with tab3:
     )
     st.markdown(card(about_html, "1.5rem"), unsafe_allow_html=True)
 
-# ── Meet the Team ──────────────────────────────────────────
-shead("👨‍💻", "Meet the Team", "#8b5cf6")
+    # ── Meet the Team ──────────────────────────────────────────
+    shead("👨‍💻", "Meet the Team", "#8b5cf6")
 
-team_intro = (
-    '<div style="font-size:0.82rem;color:#475569;line-height:1.7;margin-bottom:1rem">'
-    'We are five <strong style="color:#8b5cf6">BTech CSE (AI/ML)</strong> students who built this project '
-    'to combine our love for coding and chemistry. This app was created as part of our '
-    '<strong style="color:#8b5cf6">Semester 2 Chemistry Project</strong>, with the goal of making '
-    'molecular science fun, visual, and accessible for everyone.'
-    '</div>'
-)
-
-def team_card(initial, name, color1, color2, border_color, role, desc):
-    return (
-        f'<div style="background:#080d16;border:1px solid #1e2d45;border-left:3px solid {border_color};'
-        f'border-radius:10px;padding:1rem;margin-bottom:0.1rem">'
-        f'<div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.4rem">'
-        f'<div style="width:36px;height:36px;border-radius:50%;'
-        f'background:linear-gradient(135deg,{color1},{color2});'
-        f'display:flex;align-items:center;justify-content:center;'
-        f'font-size:1rem;font-weight:700;color:#fff;flex-shrink:0">{initial}</div>'
-        f'<div>'
-        f'<div style="font-weight:700;color:#e2e8f0;font-size:0.92rem">{name}</div>'
-        f'<div style="font-size:0.7rem;color:#334155">{role}</div>'
-        f'</div></div>'
-        f'<div style="font-size:0.8rem;color:#475569;line-height:1.6">{desc}</div>'
-        f'</div>'
+    team_intro = (
+        '<div style="font-size:0.82rem;color:#475569;line-height:1.7;margin-bottom:1rem">'
+        'We are four <strong style="color:#8b5cf6">BTech CSE (AI/ML)</strong> students who built this project '
+        'to combine our love for coding and chemistry. This app was created as part of our '
+        '<strong style="color:#8b5cf6">Semester 2 Chemistry Project</strong>, with the goal of making '
+        'molecular science fun, visual, and accessible for everyone.'
+        '</div>'
     )
 
-cards_html = (
-    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">'
-    + team_card("A","Abhinav","#06b6d4","#3b82f6","#06b6d4","BTech CSE (AI/ML)",
-                "Backend logic, PubChem API integration & RDKit descriptor pipeline. The one who makes sure the molecules actually load.")
-    + team_card("A","Aman","#3b82f6","#8b5cf6","#3b82f6","BTech CSE (AI/ML)",
-                "3D viewer integration, Plotly charts & data visualisation.")
-    + team_card("K","Kashika","#10b981","#06b6d4","#10b981","BTech CSE (AI/ML)",
-                "Drug-likeness analysis, solubility prediction & AI explanation engine.")
-    + team_card("V","Vanshika","#8b5cf6","#f43f5e","#8b5cf6","BTech CSE (AI/ML)",
-                "UI/UX design, CSS styling & overall app experience.")
-    + team_card("A","Ananya","#f59e0b","#ec4899","#f59e0b","BTech CSE (AI/ML)",
-                "Project documentation, research paper writing, PPT creation and presentation structuring. Helped organize chemistry concepts and final reporting.")
-    + '</div>'
-    + '<div style="margin-top:1rem;padding:0.75rem 1rem;border-radius:10px;'
-      'background:rgba(6,182,212,0.05);border:1px solid rgba(6,182,212,0.15);'
-      'text-align:center;font-size:0.82rem;color:#475569">'
-      '🏫 &nbsp;<strong style="color:#06b6d4">BTech CSE (AI/ML) · Semester 2</strong>'
-      '&nbsp;·&nbsp; Chemistry Project 2025–26 &nbsp;·&nbsp; Built with Python & Streamlit'
-      '</div>'
-)
+    def team_card(initial, name, color1, color2, border_color, role, desc):
+        return (
+            f'<div style="background:#080d16;border:1px solid #1e2d45;border-left:3px solid {border_color};'
+            f'border-radius:10px;padding:1rem;margin-bottom:0.1rem">'
+            f'<div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.4rem">'
+            f'<div style="width:36px;height:36px;border-radius:50%;'
+            f'background:linear-gradient(135deg,{color1},{color2});'
+            f'display:flex;align-items:center;justify-content:center;'
+            f'font-size:1rem;font-weight:700;color:#fff;flex-shrink:0">{initial}</div>'
+            f'<div>'
+            f'<div style="font-weight:700;color:#e2e8f0;font-size:0.92rem">{name}</div>'
+            f'<div style="font-size:0.7rem;color:#334155">{role}</div>'
+            f'</div></div>'
+            f'<div style="font-size:0.8rem;color:#475569;line-height:1.6">{desc}</div>'
+            f'</div>'
+        )
 
-st.markdown(card(team_intro + cards_html, "1.4rem"), unsafe_allow_html=True)
+    cards_html = (
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">'
+        + team_card("A","Abhinav","#06b6d4","#3b82f6","#06b6d4","BTech CSE (AI/ML)",
+                    "Backend logic, PubChem API integration &amp; RDKit descriptor pipeline. The one who makes sure the molecules actually load. 🔬")
+        + team_card("A","Aman","#3b82f6","#8b5cf6","#3b82f6","BTech CSE (AI/ML)",
+                    "3D viewer integration, Plotly charts &amp; data visualisation. Makes the molecules look cool and spin. 🔭")
+        + team_card("K","Kashika","#10b981","#06b6d4","#10b981","BTech CSE (AI/ML)",
+                    "Drug-likeness analysis, solubility prediction &amp; AI explanation engine. The chemistry brain of the team. 💊")
+        + team_card("V","Vanshika","#8b5cf6","#f43f5e","#8b5cf6","BTech CSE (AI/ML)",
+                    "UI/UX design, CSS styling &amp; overall app experience. Responsible for making everything look this good. ✨")
+        + team_card("A","Ananya","#f59e0b","#ec4899","#f59e0b","BTech CSE (AI/ML)",
+            "Project documentation, research paper writing & presentation preparation. Helped structure the chemistry concepts and final reporting. 📄")
+        + '</div>'
+        + '<div style="margin-top:1rem;padding:0.75rem 1rem;border-radius:10px;'
+          'background:rgba(6,182,212,0.05);border:1px solid rgba(6,182,212,0.15);'
+          'text-align:center;font-size:0.82rem;color:#475569">'
+          '🏫 &nbsp;<strong style="color:#06b6d4">BTech CSE (AI/ML) · Semester 2</strong>'
+          '&nbsp;·&nbsp; Chemistry Project 2025–26 &nbsp;·&nbsp; Built with Python &amp; Streamlit'
+          '</div>'
+    )
+
+    st.markdown(card(team_intro + cards_html, "1.4rem"), unsafe_allow_html=True)
